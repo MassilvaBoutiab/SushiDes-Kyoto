@@ -1,0 +1,242 @@
+html, body{
+    width: 100% ;
+    padding: 0px;
+    margin:0px;
+    height:100% ;
+    
+}
+body{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 16px;
+    background: rgb(255, 237, 237);
+}
+
+.b1{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(../image/bg/bg3.jpg) no-repeat 50% 50%;
+    top:0;
+    display: table;
+    background-size: cover;
+}
+.b1 .in1{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+.landcount{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background: rgba(3, 3, 3, 0.63);
+    border-radius: 40px;
+    
+    
+}
+.landcount h1{
+    color: rgb(255, 234, 234);
+    padding-top: 60px;
+    font-size: 50px;
+    
+}
+.landcount img{
+    width: 250px;
+    height: 250px;
+    padding-bottom: 40px;
+}
+
+
+#main_menu{
+    width: 100%;
+    position: relative;
+    height: 250px;
+    
+}
+.logo_area{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top:20px;
+    content:"";
+    margin-left: -150px;
+    text-align: center;
+}
+.inner_menu {
+    width: 950px;
+    margin: 0 auto;
+    padding:0px;
+    
+    
+}
+.inner_menu ul{
+    list-style: none;
+    margin: 0px;
+    padding-top: 100px;
+    text-align: right;
+}
+.inner_menu ul li{
+    float: none;
+    display: inline-block;
+
+}
+.inner_menu ul li:nth-child(1){
+    float: left;
+}
+.inner_menu ul li:nth-child(2){
+    float: left;
+}
+.inner_menu ul li:nth-child(3){
+    float: left;
+}
+.inner_menu ul li a{
+    
+    color: rgb(255, 179, 179);
+    font-size: 26px;
+    padding: 15px 20px;
+    display:block;
+    text-decoration: none;
+}
+
+.inner_menu ul li a:hover{
+    color: rgb(255, 97, 97);
+}
+
+.container-cont{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+.container-cont:after{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background:url(../image/bg/bg2.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50px);
+}
+.contactbox{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(252, 235, 235);
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+.left{
+    height: 100%;
+    background:url(../image/bg/bg4.jpg) no-repeat center;
+    background-size: cover;
+}
+.right{
+    padding: 25px 45px;
+}
+.right .resform h2{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.right .resform h2:after{
+    content: '';
+    position: absolute;
+    left:50%;
+    bottom:0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #ca3875;
+    
+}
+.field{
+    widows: 100%;
+    padding: 8px 16px;
+    outline: none;
+    border:2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(173, 217, 223, 0.548);
+    font-size: 18px;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    }
+.field:focus{
+    background-color: #fff;
+    border:2px solid rgba(252, 115, 167, 0.493);
+ }
+.area{
+    min-height:150px;
+}
+.buttonsend{
+    width: 100%;
+    padding: 8px 16px; 
+    font-size: 18px;
+    background-color: rgb(138, 195, 202);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .3s;
+}
+.buttonsend:hover{
+    background-color: rgb(75, 148, 243);
+}
+@media screen and (max-width:880px){
+    .contactbox{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height:200px;
+    }
+}
+.welcome{
+    position: relative;
+  text-align: center;
+  color: white;
+  font-size:50px;
+}
+.welcome img {
+    width:100%;
+    height:670px;
+    
+    
+}
+.centerwel{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.descript {
+    padding: 5px;
+    text-align: center;
+    box-align:center;
+    display: inline-block;
+    font-size: 150%;
+}
+.identity {
+ padding: 2px;
+ 
+ background-color: white;
+ width: 80%;
+ height: 130px;
+ }
+.identity img {
+    float: right;
+    width:50%;
+
+}
